@@ -28,7 +28,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById('field-datesortie').value = now.toJSON().slice(0,10);
     document.getElementById('field-heuresortie').value = now.toLocaleString("fr-FR", {timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit", hour12: false});
     setTimeout(() => {
-        document.getElementById("generate-btn").click()
+        document.getElementById("generate-btn").click();
+        document.getElementById("message").innerHTML='PDF généré regardez dans vos fichiers téléchargés ;-)';
     }, 500)
 });
 
