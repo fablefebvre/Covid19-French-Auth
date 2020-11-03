@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById('field-heuresortie').value = now.toLocaleString("fr-FR", {timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit", hour12: false});
     setTimeout(() => {
         document.getElementById("generate-btn").click();
-        document.getElementById("message").innerHTML='PDF généré regardez dans vos fichiers téléchargés ;-)';
+        document.getElementById("message").innerHTML='<h1>PDF généré regardez dans vos fichiers téléchargés ;-)</h1>';
     }, 500)
 });
 
