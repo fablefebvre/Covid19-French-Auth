@@ -16,7 +16,7 @@
             <input type="text" id="last-name" name="lastname" autocomplete="family-name" placeholder="Dupont" aria-labelledby="field-lastname-label" required="" autofocus="">
             </br>
             birthday
-            <input type="text" inputmode="numeric" id="birthdate" name="birthday" autocomplete="bday" placeholder="01/01/1970" maxlength="10" aria-labelledby="field-birthday-label" required="">
+            <input type="text" id="birthdate" name="birthday" autocomplete="bday" placeholder="01/01/1970" maxlength="10" aria-labelledby="field-birthday-label" required="">
             </br>
             lieunaissance
             <input type="text" id="birth-place" name="lieunaissance" aria-labelledby="field-lieunaissance-label" placeholder="Lyon" required="">
@@ -30,23 +30,33 @@
             zipcode
             <input type="number" min="00000" max="99999" id="post-code" name="post-code" autocomplete="zipcode" minlength="4" maxlength="5" aria-labelledby="field-zipcode-label" placeholder="75001" required="">
             </br></br></br>
-
-            REASON </br>
-            <select id="motive" name="motive">
-                <option value="0">Sélectionnez une raison...</option>
-                <option value="travail">travail</option>
-                <option value="achats_culturel_cultuel">achats_culturel_cultuel</option>
-                <option value="enfants">enfants</option>
-                <option value="sport_animaux">sport_animaux</option>
-                <option value="sante">sante</option>
-                <option value="famille">famille</option>
-                <option value="handicap">handicap</option>
-                <option value="convocation">convocation</option>
-                <option value="missions">missions</option>
-            </select>
         </form>
         <button onclick="refreshData()">Valider</button>
-        <div id="generation-link">
+        <div id="generation-link-travail">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-achats">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-enfants">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-sport_animaux">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-sante">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-famille">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-handicap">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-convocation">
+            <a href="generate.html"></a>
+        </div>
+        <div id="generation-link-missions">
             <a href="generate.html"></a>
         </div>
     </div>

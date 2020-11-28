@@ -7,8 +7,7 @@ function refreshData() {
     const address = document.getElementById("address").value; //address
     const town = document.getElementById("city").value; //city
     const zipcode = document.getElementById("post-code").value; //zipcode
-    var   reason = document.getElementById('motive').value;
-
+ 
     var data = {
         f: firstname,
         l: lastname,
@@ -17,10 +16,18 @@ function refreshData() {
         a: address,
         c: town,
         z: zipcode,
-        r: reason
+        r: 'reason'
     }
-    document.querySelector("#generation-link > a").href = window.location.origin + "/generate.html#" + serialize(data);
-    document.querySelector("#generation-link > a").innerText = window.location.origin + "/generate.html#" + serialize(data);
+
+    var reasons = ['travail', 'achats', 'enfants', 'sport_animaux', 'sante', 'famille', 'handicap', 'convocation', 'missions']
+
+    reasons.forEach(reason => {
+        data['r'] = reason;
+        console.log('Reason:' + reason);
+        document.querySelector("#generation-link-" + reason + " > a").href = window.location.origin + "/generate.html#" + serialize(data);
+        document.querySelector("#generation-link-" + reason + " > a").innerText = reason;
+    });
+
 }
 
 function serialize(obj) {
